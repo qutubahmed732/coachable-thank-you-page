@@ -1,5 +1,6 @@
 import heroImage from "../assets/desktop/Hero-image.png";
 import SVGFile from "../assets/desktop/Section1_DOts.svg";
+import backgroundImage from "../assets/desktop/sec1.jpg";
 import smallRobot from "../assets/mobile/Sec1.jpg";
 import logo from "../assets/logo.png"
 
@@ -8,9 +9,9 @@ function Herosection() {
 
 
   return (
-    <section className="relative w-full h-[100dvh] bg-[url('../../Desktop_Version/JPEG_Backgrounds/sec1.jpg')] bg-center bg-cover bg-no-repeat overflow-x-hidden">
+    <section className="relative w-full h-[100dvh] bg-center bg-cover bg-no-repeat overflow-x-hidden" style={{backgroundImage: `url(${backgroundImage})`, mixBlendMode: "multiply"}}>
       {/* Start of background style */}
-      <div className="absolute z-10 lg:z-0 w-full h-full bg-[url('../../Desktop_Version/SVG/Section1_DOts.svg')] bg-no-repeat bg-center bg-cover">
+      <div className="absolute z-20 lg:z-0 w-full h-full bg-no-repeat bg-center bg-cover" style={{backgroundImage: `url(${SVGFile})`}}>
       </div>
       <div className="relative h-full w-full max-w-[1500px] xl:max-w-[100%] mx-auto">
         <img src={heroImage} className='hidden md:block w-[calc(614px+5%)] xl:w-1/2 h-full absolute left-auto right-0 z-0 lg:z-20' alt="" />
