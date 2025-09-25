@@ -12,8 +12,18 @@
     }
 }
 
+.font-below-{
+    inset: 0;
+}
+
 .flex-col-1380 {
     @media(max-width: 1380px) {
         flex-direction: column;
+    }
+}
+
+.hidden-1200px {
+    @media (max-width: 1200px) {
+        display: none;
     }
 }
