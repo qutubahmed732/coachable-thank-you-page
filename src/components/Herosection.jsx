@@ -1,0 +1,35 @@
+import React from 'react'
+
+function Herosection() {
+
+
+
+  return (
+    <section className="relative w-full h-[100dvh] bg-[url('../../Desktop_Version/JPEG_Backgrounds/sec1.jpg')] bg-center bg-cover bg-no-repeat overflow-x-hidden">
+      {/* Start of background style */}
+      <div className="absolute z-10 lg:z-0 w-full h-full bg-[url('../../Desktop_Version/SVG/Section1_DOts.svg')] bg-no-repeat bg-center bg-cover">
+      </div>
+      <div className="relative h-full w-full max-w-[1500px] xl:max-w-[100%] mx-auto">
+        <img src="../../Desktop_Version/PNG/Hero-image.png" className='hidden md:block w-[calc(614px+5%)] xl:w-1/2 h-full absolute left-auto right-0 z-0 lg:z-20' alt="" />
+        <img src="../../Mobile_version/JPEG_Backgrounds/Sec1.jpg" className='w-full h-full block md:hidden absolute right-0 z-0 lg:z-10' alt="" />
+        {/* End of background style */}
+
+        {/* Start of content  */}
+        <div className="flex flex-col items-center justify-center max-w-5xl h-full relative z-20">
+          <div className="flex flex-col gap-20 md:gap-10 pl-5 md:pl-15 lg:pl-30">
+            <img src="../../Desktop_Version/PNG/logo.png" className="w-60 md:w-80 lg:w-100" alt="" />
+            <div className="flex flex-col items-start gap-5 lg:gap-9 gap-above-1300">
+              <p className="text-3xl md:text-4xl lg:text-5xl text-[#75fbb5] font-medium">THANK YOU</p>
+              <h1 className='text-white text-4xl md:text-6xl font-above-1300 font-bold leading-10 md:leading-18 text-balance'>Your exact Coachable build prompt is on its way to your inbox...</h1>
+              <h4 className='text-3xl md:text-5xl text-emerald-400 italic font-medium'>but before you dive in,<br /> read this carefully</h4>
+            </div>
+          </div>
+        </div>
+        {/* End of content */}
+
+      </div>
+    </section>
+  )
+}
+
+export default Herosection;

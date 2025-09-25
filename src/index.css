@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.gap-above-1300 {
+    @media(min-width: 1300px){
+        gap: 3rem;
+    }
+}
+
+.font-above-1300 {
+    @media(min-width: 1300px){
+        font-size: 4rem;
+    }
+}
+
+.flex-col-1380 {
+    @media(max-width: 1380px) {
+        flex-direction: column;
+    }
+}
