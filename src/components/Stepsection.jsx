@@ -4,10 +4,11 @@ import ideaIcon from "../assets/desktop/idea.png";
 import funnelIcon from "../assets/desktop/funnel.png";
 import contentIcon from "../assets/desktop/content.png";
 import statsIcon from "../assets/desktop/stats.png";
+import SVG from "../assets/desktop/Section5_Dots.svg";
 
 function Stepsection() {
     return (
-        <section className="relative flex flex-col-1380 md:flex-row h-auto md:h-[100vh] bg-[url('../../Desktop_Version/SVG/Section5_Dots.svg')] bg-no-repeat bg-cover bg-center bg-[#F5F5F5] mix-blend-colorburn">
+        <section className="relative flex flex-col-1380 md:flex-row h-auto md:h-[100vh] bg-no-repeat bg-cover bg-center bg-[#F5F5F5] mix-blend-colorburn" style={{backgroundImage: `url(${SVG})`}}>
             <img src={roboticHand} className='hidden md:block w-[calc(614px+5vw)] absolute bottom-0 left-0 z-10' alt="robotic hand" />
             <img src={smallRoboticHand} className='block md:hidden w-[calc(614px+5vw)]' alt="robotic hand" />
 
