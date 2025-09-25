@@ -1,8 +1,15 @@
+import roboticHand from "../assets/desktop/robotic-hand-third-section.png";
+import smallRoboticHand from "../assets/mobile/small-image-robotic-hand.png";
+import ideaIcon from "../assets/desktop/idea.png";
+import funnelIcon from "../assets/desktop/funnel.png";
+import contentIcon from "../assets/desktop/content.png";
+import statsIcon from "../assets/desktop/stats.png";
+
 function Stepsection() {
     return (
         <section className="relative flex flex-col-1380 md:flex-row h-auto md:h-[100vh] bg-[url('../../Desktop_Version/SVG/Section5_Dots.svg')] bg-no-repeat bg-cover bg-center bg-[#F5F5F5] mix-blend-colorburn">
-            <img src="../src/assets/desktop/robotic-hand-third-section.png" className='hidden md:block w-[calc(614px+5vw)] absolute bottom-0 left-0 z-10' alt="robotic hand" />
-            <img src="../src/assets/mobile/small-image-robotic-hand.png" className='block md:hidden w-[calc(614px+5vw)]' alt="robotic hand" />
+            <img src={roboticHand} className='hidden md:block w-[calc(614px+5vw)] absolute bottom-0 left-0 z-10' alt="robotic hand" />
+            <img src={smallRoboticHand} className='block md:hidden w-[calc(614px+5vw)]' alt="robotic hand" />
 
             <div className="w-full flex flex-col items-center justify-start my-auto z-20 py-5 px-3">
                 <div className="w-full md:w-[50%] h-[80%] ml-0 md:ml-auto mr-0 md:mr-20 my-auto flex flex-col items-center gap-3">
@@ -17,22 +24,22 @@ function Stepsection() {
 
                         <div className="grid grid-cols-2 grid-rows-2 gap-5 md:flex md:gap-8">
                             <div className="flex flex-col items-center gap-2 h-full">
-                                <img src="../src/assets/desktop/idea.png" className="w-20" alt="idea" />
+                                <img src={ideaIcon} className="w-20" alt="idea" />
                                 <p className="text-white text-lg font-semibold">IDEA</p>
                             </div>
 
                             <div className="flex flex-col items-center gap-2 h-full">
-                                <img src="../src/assets/desktop/funnel.png" className="w-20" alt="funnel" />
+                                <img src={funnelIcon} className="w-20" alt="funnel" />
                                 <p className="text-white text-lg font-semibold">FUNNEL</p>
                             </div>
 
                             <div className="flex flex-col items-center gap-2 h-full">
-                                <img src="../src/assets/desktop/content.png" className="w-20" alt="content" />
+                                <img src={contentIcon} className="w-20" alt="content" />
                                 <p className="text-white text-lg font-semibold">CONTENT</p>
                             </div>
 
                             <div className="flex flex-col items-center gap-2 h-full">
-                                <img src="../src/assets/desktop/stats.png" className="w-20" alt="stats" />
+                                <img src={statsIcon} className="w-20" alt="stats" />
                                 <p className="text-white text-lg font-semibold text-center">FIRST SALES</p>
                             </div>
                         </div>
