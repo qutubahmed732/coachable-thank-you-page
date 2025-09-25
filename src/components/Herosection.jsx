@@ -14,7 +14,7 @@ function Herosection() {
       <div className="absolute z-20 lg:z-0 w-full h-full bg-no-repeat bg-center bg-cover" style={{backgroundImage: `url(${SVGFile})`}}>
       </div>
       <div className="relative h-full w-full max-w-[1500px] xl:max-w-[100%] mx-auto">
-        <img src={heroImage} className='hidden md:block w-[calc(614px+5%)] xl:w-1/2 h-full absolute left-auto right-0 z-0 lg:z-20' alt="" />
+        <img src={heroImage} className='hidden md:block w-[calc(614px+5vw)] xl:w-[40%] h-full absolute left-auto right-0 z-0 lg:z-20' alt="" />
         <img src={smallRobot} className='w-full h-full block md:hidden absolute right-0 z-0 lg:z-10' alt="" />
         {/* End of background style */}
 
