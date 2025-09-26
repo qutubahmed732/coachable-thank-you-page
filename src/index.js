@@ -4,7 +4,9 @@ import Stepsection from "./components/Stepsection";
 import Purchasesection from "./components/Purchasesection";
 import Discountsection from "./components/Discountsection";
 import Guaranteesection from "./components/Guaranteesection";
-import Footer from "./components/footer"
+import Footer from "./components/footer";
+import Mainpage from "./components/Mainpage";
+import Thankyoupage from "./components/Thankyoupage";
 
 
 export {
@@ -14,5 +16,7 @@ export {
     Purchasesection,
     Discountsection,
     Guaranteesection,
-    Footer
+    Footer,
+    Mainpage,
+    Thankyoupage
 }

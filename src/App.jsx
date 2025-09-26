@@ -1,28 +1,22 @@
 import {
-  Herosection,
-  Secondsection,
-  Stepsection,
-  Purchasesection,
-  Discountsection,
-  Guaranteesection,
-  Footer
+  Mainpage,
+  Thankyoupage
 } from "./index.js";
-// import Examplesection from "./components/exapmplesection.jsx"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 
   return (
     <>
-      <Herosection />
-      <Secondsection />
-      <Stepsection />
-      <Purchasesection />
-      <Discountsection />
-      <Guaranteesection />
-      <Footer />
-      {/* <Examplesection /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Mainpage />} />
+
+          <Route path="/thank-you-page" element={<Thankyoupage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
 
-export default App
+export default App;
