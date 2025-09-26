@@ -8,12 +8,12 @@ import SVG from "../assets/desktop/Section5_Dots.svg";
 
 function Stepsection() {
     return (
-        <section className="relative flex flex-col-1380 md:flex-row h-auto md:h-[100vh] bg-no-repeat bg-cover bg-center bg-[#F5F5F5] mix-blend-colorburn" style={{backgroundImage: `url(${SVG})`}}>
-            <img src={roboticHand} className='hidden md:block w-[calc(614px+5vw)] absolute bottom-0 left-0 z-10' alt="robotic hand" />
+        <section className="relative py-18 flex flex-col-1380 md:flex-row h-auto bg-no-repeat bg-cover bg-center bg-[#F5F5F5] mix-blend-colorburn" style={{backgroundImage: `url(${SVG})`}}>
+            <img src={roboticHand} className='hidden-1370px w-[calc(614px+5vw)] absolute bottom-0 left-0 z-10' alt="robotic hand" />
             <img src={smallRoboticHand} className='block md:hidden w-[calc(614px+5vw)]' alt="robotic hand" />
 
-            <div className="w-full flex flex-col items-center justify-start my-auto z-20 py-5 px-3">
-                <div className="w-full md:w-[50%] h-[80%] ml-0 md:ml-auto mr-0 md:mr-20 my-auto flex flex-col items-center gap-3">
+            <div className="w-full flex flex-col items-center justify-start z-20 py-3 px-3">
+                <div className="w-full md:max-w-[700px] h-[80%] ml-0 md:ml-auto mr-0 md:mr-20 my-auto flex flex-col items-center gap-3">
 
                     <div className="w-[100%] flex flex-col gap-5 text-center md:text-left">
                         <h2 className="font-semibold text-2xl md:text-4xl text-balance">We used this exact prompt to spark the business that became Coachable... <br /> But the real secret wasn't the prompt itself.</h2>

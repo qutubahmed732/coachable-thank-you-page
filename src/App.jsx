@@ -1,4 +1,12 @@
-import { Herosection, Secondsection, Stepsection, Purchasesection, Discountsection, Guaranteesection, Footer } from "./index.js";
+import {
+  Herosection,
+  Secondsection,
+  Stepsection,
+  Purchasesection,
+  Discountsection,
+  Guaranteesection,
+  Footer
+} from "./index.js";
 
 function App() {
 
