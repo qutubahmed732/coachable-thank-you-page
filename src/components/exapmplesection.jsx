@@ -2,28 +2,120 @@ import React from 'react'
 import roboticHand from "../assets/desktop/robotic-hand-third-section.png";
 import smallRoboticHand from "../assets/mobile/small-image-robotic-hand.png";
 import SVG from "../assets/desktop/Section5_Dots.svg";
+import { Lightbulb, Funnel, FileText, BarChart } from "lucide-react";
+
+import idea from "../assets/desktop/idea.png";
+import funnel from "../assets/desktop/funnel.png"
+import right from "../assets/desktop/right.png";
+import content from "../assets/desktop/content.png";
+import stats from "../assets/desktop/stats.png";
 
 function Exapmplesection() {
     return (
-        <section className="relative w-full h-[100vh] flex flex-col md:flex-row items-center justify-between bg-no-repeat bg-cover bg-center bg-[#F5F5F5] mix-blend-colorburn" style={{ backgroundImage: `url(${SVG})` }}>
-            <div className="absolute w-full h-full bottom-0 left-0">
-                <img className='w-[calc(614px+5vw)] h-full' src={roboticHand} alt="" />
-            </div>
+        // <section className="bg-teal-900 text-white py-10 rounded-lg">
+        //     <div className="max-w-4xl mx-auto text-center">
+        //         <h2 className="text-xl font-semibold mb-8">
+        //             Those 10 days took us from:
+        //         </h2>
 
-            <div className="absolute w-full h-full right-0 left-auto flex items-center justify-end">
-                <div className='absolute max-w-[700px] h-[80%] mr-10 border-3 border-emerald-300'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officia officiis error iste amet laborum magni voluptatibus culpa doloremque, asperiores natus fugiat minima numquam. Laudantium, eaque. Officia distinctio ratione voluptatum.
-                Itaque libero ea suscipit praesentium nesciunt enim perferendis maiores commodi quibusdam sequi. Repellat non ex earum. Odit ratione ad earum architecto non itaque, nihil temporibus in consequuntur facilis libero quas?
-                Fuga non numquam harum iste voluptatum accusantium labore perspiciatis ratione beatae suscipit, modi sunt? Alias voluptates ad hic earum eos dignissimos? Quas aliquam omnis a debitis beatae ex numquam quia.
-                Necessitatibus inventore corporis velit. Ea ut officiis cum quidem atque! Porro animi ex rem, accusantium minus labore, harum minima dolorum distinctio repudiandae quas laboriosam error sapiente provident nam dicta sunt?
-                Reprehenderit provident eum, reiciendis magni laborum pariatur? Itaque quod labore, illum eligendi eum hic officia molestiae incidunt fugit animi. Similique illum assumenda quae neque praesentium nam consequatur quam odit modi.
-                Eius facere laudantium nesciunt nam nisi! Cumque nostrum accusamus, sint, mollitia iste dicta quae blanditiis aliquid saepe labore porro quaerat repellendus consequuntur possimus modi ipsam nobis quasi, odit quo? Quo.
-                Deserunt quae dolorum eveniet, totam recusandae in quidem quod at laudantium ipsa nobis fugit excepturi id dolor ipsam harum sapiente exercitationem aliquid asperiores dicta! Sit, suscipit. Praesentium quibusdam modi itaque?
-                Voluptatem totam rerum sunt molestias aliquid, veniam modi error vel repudiandae tenetur quam ut dolor nam eum iusto. Explicabo temporibus, placeat totam voluptatum rem ipsam expedita dolor et non veniam!
-                Nemo nulla, nihil earum sunt modi explicabo ipsa, praesentium vero iusto totam incidunt molestiae nisi mollitia minus eius pariatur sequi tempore non. Eum iusto labore necessitatibus maxime! Quo, voluptates necessitatibus!
-                Ab optio repellendus quia, dolores dolorum ad quam! Vero, dicta. Blanditiis ullam officiis quidem ducimus consequatur delectus aliquam impedit eligendi, sequi placeat, neque eius, odit doloremque repellat quos cupiditate exercitationem.</div>
+        //         <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-7 md:grid-rows-1 items-center justify-items-center">
+
+        //             <div className="flex flex-col items-center pt-5">
+        //                 <img src={idea} width={100} alt="" />
+        //                 <p className="mt-2 font-medium">IDEA</p>
+        //             </div>
+
+
+        //             <span className="w-20 rotate-90 md:rotate-0"><img src={right} alt="" /></span>
+
+
+        //             <div className="flex flex-col items-center pt-5">
+        //                 <img src={funnel} width={100} alt="" />
+        //                 <p className="mt-2 font-medium">FUNNEL</p>
+        //             </div>
+
+
+        //             <span className="w-20"><img src={right} alt="" /></span>
+
+
+        //             <div className="flex flex-col items-center pt-5">
+        //                 <img src={content} width={100} alt="" />
+        //                 <p className="mt-2 font-medium">CONTENT</p>
+        //             </div>
+
+
+        //             <span className="w-20"><img src={right} alt="" /></span>
+
+
+        //             <div className="flex flex-col items-center pt-5">
+        //                 <img src={stats} width={100} alt="" />
+        //                 <p className="mt-2 font-medium">FIRST SALES</p>
+        //             </div>
+        //         </div>
+
+        //         <p className="mt-6 text-gray-200">
+        //             And we've broken them down step-by-step so you can do the same.
+        //         </p>
+        //     </div>
+        // </section>
+
+        <section className="bg-teal-900 text-white py-10 rounded-lg">
+            <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-xl font-semibold mb-8">
+                    Those 10 days took us from:
+                </h2>
+
+                {/* Responsive Grid */}
+                <div className="grid grid-cols-3 grid-rows-3 md:grid-cols-7 md:grid-rows-1 place-items-stretch items-center justify-items-center gap-4">
+
+                    {/* Step 1 */}
+                    <div className="col-start-1 col-end-1 flex flex-col items-center">
+                        <img src={idea} width={100} alt="idea" />
+                        <p className="mt-2 font-medium">IDEA</p>
+                    </div>
+
+                    {/* Arrow 1 */}
+                    <span className="col-start-2 col-end-2 w-12 md:w-20 rotate-0 flex justify-center">
+                        <img src={right} alt="arrow" />
+                    </span>
+
+                    {/* Step 2 */}
+                    <div className="col-start-3 col-end-4 flex flex-col items-center">
+                        <img src={funnel} width={100} alt="funnel" />
+                        <p className="mt-2 font-medium">FUNNEL</p>
+                    </div>
+
+                    {/* Arrow 2 (mobile mai neeche aana chahiye, desktop mai inline) */}
+                    <span className="col-start-3 col-end-4 w-12 md:w-20 rotate-90 md:rotate-0 flex justify-center">
+                        <img src={right} alt="arrow" />
+                    </span>
+
+                    {/* Step 3 (mobile mai niche right side pe) */}
+                    <div className="col-start-3 col-end-4 row-start-3 row-end-4 flex flex-col items-center">
+                        <img src={content} width={100} alt="content" />
+                        <p className="mt-2 font-medium">CONTENT</p>
+                    </div>
+
+                    {/* Arrow 3 (mobile mai left side pe ulta arrow, desktop mai inline) */}
+                    <span className="order-4 md:order-6 w-12 md:w-20 rotate-180 md:rotate-0 flex justify-center">
+                        <img src={right} alt="arrow" />
+                    </span>
+
+                    {/* Step 4 (mobile mai bottom-left pe, desktop mai end pe) */}
+                    <div className="col-start-1 col-end-2 row-start-3 row-end-4 flex flex-col items-center">
+                        <img src={stats} width={100} alt="sales" />
+                        <p className="mt-2 font-medium">FIRST SALES</p>
+                    </div>
+                </div>
+
+                <p className="mt-6 text-gray-200">
+                    And we've broken them down step-by-step so you can do the same.
+                </p>
             </div>
         </section>
+
+
+
     )
 }
 

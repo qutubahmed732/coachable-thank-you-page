@@ -7,6 +7,7 @@ import {
   Guaranteesection,
   Footer
 } from "./index.js";
+// import Examplesection from "./components/exapmplesection.jsx"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Discountsection />
       <Guaranteesection />
       <Footer />
+      {/* <Examplesection /> */}
     </>
   )
 }

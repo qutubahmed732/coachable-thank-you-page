@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 .gap-above-1300 {
-    @media(min-width: 1300px){
+    @media(min-width: 1300px) {
         gap: 3rem;
     }
 }
 
 .font-above-1300 {
-    @media(min-width: 1300px){
+    @media(min-width: 1300px) {
         font-size: 4rem;
     }
 }
 
-.font-below-{
+.font-below- {
     inset: 0;
 }
 
@@ -27,6 +27,7 @@
         display: none;
     }
 }
+
 .hidden-1370px {
     @media (max-width: 1370px) {
         display: none;
